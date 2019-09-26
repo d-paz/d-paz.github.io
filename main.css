@@ -1,0 +1,120 @@
+/* CSS RESET */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+ margin:0;
+ padding:0;
+ border:0;
+ outline:0;
+ font-size:100%;
+ vertical-align:baseline;
+ background:transparent;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* LOGO AND TOP NAV */
+
+.topLogo{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.topLogo .nav{
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.topLogo h1{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    padding: 10px 0;
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    word-spacing: .05em;
+    text-shadow: 3px 3px 4px rgba(29, 21, 3, 0.349);
+}
+
+.topLogo a{
+    width: 120px;
+    color: rgb(189, 181, 159);
+    text-decoration: none;
+    background-color: rgb(37, 32, 29);
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    font-size: 1.1em;
+    padding: 5px 5px 0;
+}
+
+.nav .activeTab{
+    background-color: rgb(59, 51, 45);
+    color: white;
+}
+
+.nav a:hover{
+    background-color: rgb(59, 51, 45);
+    color: white;
+}
+
+.nav a{
+    transition-delay: 0.2s;
+    transition-property: background-color, color;
+    transition-duration: 0.7s;
+}
+/* GENERAL BODY STYLING */
+main{
+    margin-top: 40px;
+    max-width: 1000px;
+    background-color: rgb(59, 51, 45);
+    margin: 0 auto;
+    padding-top: 40px;
+    border-radius: 10px 0 10px 10px;
+}
+body{
+    background-color: rgb(16, 16, 16);
+}
+.headingBG{
+    background-image: url(images/redRule.png);
+    background-color: rgb(68, 39, 28);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+    width: 800;
+    /* This color may be useful
+    border: 2px solid rgb(41,31,18);
+    */
+}
+
+body h2{
+    font-size: 2em;
+    color: white;
+    max-width: 800px;
+    margin: auto;
+    padding: 15px 0;
+}
+
+/* FOOTER */
+body footer{
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    background-color: black;
+    z-index: 10;
+}
+body footer p{
+    font-size: 0.8em;
+    font-variant: small-caps;
+    color: white;
+}
