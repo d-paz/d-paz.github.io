@@ -1,0 +1,58 @@
+$projImg-sizing: 250px;
+$mainGray: rgb(48, 48, 48);
+$accentGray: rgb(229, 219, 253);
+
+
+
+.projSection{
+    .btn-sm{
+        margin-bottom: 1em;
+    }
+    img{
+        max-width: $projImg-sizing;
+        max-height: $projImg-sizing;
+        border-radius: 10px;
+    }
+    li:first-of-type{
+        background-color: $accentGray;
+        color: $mainGray;
+    }
+}
+
+.sectionHeading{
+    padding-top: 6rem;
+    text-align: center;
+    text-shadow: 1px 1px 1px $mainGray;
+    padding-bottom: 1rem;
+    span{
+    border-bottom: 2px solid $accentGray;
+    border-radius: 1px;
+    padding-bottom: 0.25rem;
+    }
+}
+
+.topHeader{
+    background-image: url('images/laSkyline.jpg');
+    background-size: cover;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #131318;
+    padding-bottom: 7rem;
+    padding-top: 7rem;
+}
+
+.pageHeader{
+    border: none;
+    border-bottom: none !important;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 50%;
+    z-index: 100;
+}
+
+.contactList{
+    width: 50%;
+}
